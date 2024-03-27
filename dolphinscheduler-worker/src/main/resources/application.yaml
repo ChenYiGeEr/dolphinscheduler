@@ -49,7 +49,7 @@ worker:
   host-weight: 100
   server-load-protection:
     # If set true, will open worker overload protection
-    enabled: true
+    enabled: false
     # Worker max cpu usage, when the worker's cpu usage is smaller then this value, worker server can be dispatched tasks.
     max-cpu-usage-percentage-thresholds: 0.7
     # Worker max jvm memory usage , when the worker's jvm memory usage is smaller then this value, worker server can be dispatched tasks.

@@ -121,7 +121,7 @@ master:
   state-wheel-interval: 5s
   server-load-protection:
     # If set true, will open master overload protection
-    enabled: true
+    enabled: false
     # Master max cpu usage, when the master's cpu usage is smaller then this value, master server can execute workflow.
     max-cpu-usage-percentage-thresholds: 0.7
     # Master max JVM memory usage , when the master's jvm memory usage is smaller then this value, master server can execute workflow.
@@ -176,7 +176,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/dolphinscheduler
     username: root
-    password: root
+    password: macos_lim
   quartz:
     properties:
       org.quartz.jobStore.driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
